@@ -9,10 +9,9 @@ public class Main{
 		linkedList.insert(56);
 		linkedList.insert(30);
 		linkedList.insert(70);
-		int pop = linkedList.pop();
-		System.out.println(pop);
+		linkedList.popLast();
+
 		linkedList.print();
 
-		System.out.println("Deleted Element From LinkedList");
 	}
 }
