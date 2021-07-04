@@ -1,5 +1,7 @@
 package com.Bridgelabz;
-import com.Bridgelabz .LinkedList.Node;
+
+import com.Bridgelabz.LinkedList.Node;
+
 public class Main {
 	public static void main(String[] args) {
 		System.out.println("Welcome to DataStructure Program");
@@ -13,8 +15,8 @@ public class Main {
 		linkedList.delete(3);
 
 		linkedList.print();
-
+		System.out.println("print Elements");
 
 	}
-	
+
 }
