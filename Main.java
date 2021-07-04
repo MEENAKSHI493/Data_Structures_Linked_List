@@ -3,7 +3,6 @@ package com.Bridgelabz;
 public class Main {
 		public static void main(String[] args) {
 			System.out.println("Welcome to DataStructure Program");
-			System.out.println("Welcome to DataStructure Program");
 			LinkedList linkedList = new LinkedList();
 			
 			linkedList.insert(56);
