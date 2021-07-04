@@ -1,5 +1,5 @@
 package com.Bridgelabz;
-
+import com.Bridgelabz .LinkedList.Node;
 public class Main {
 	public static void main(String[] args) {
 		System.out.println("Welcome to DataStructure Program");
@@ -8,10 +8,11 @@ public class Main {
 		linkedList.insert(56);
 		linkedList.insert(30);
 		linkedList.insert(70);
-		linkedList.popLast();
+
+		linkedList.insertAtPos(3, 40);
 
 		linkedList.print();
-	System.out.println("Last Element Deleted");
+
 	}
 	
 }
