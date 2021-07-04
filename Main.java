@@ -1,7 +1,6 @@
 package com.Bridgelabz;
 
-public class Main{
-
+public class Main {
 	public static void main(String[] args) {
 		System.out.println("Welcome to DataStructure Program");
 		LinkedList linkedList = new LinkedList();
@@ -12,6 +11,7 @@ public class Main{
 		linkedList.popLast();
 
 		linkedList.print();
-
+	System.out.println("Last Element Deleted");
 	}
+	
 }
