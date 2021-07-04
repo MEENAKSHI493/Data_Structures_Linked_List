@@ -2,11 +2,9 @@ package com.Bridgelabz;
 public class LinkedList {
 	//head of list
 		Node head;	 
-		
 		class Node{
 			int data;
 			Node next;
-			
 			public Node(int data) {
 				this.data = data;
 				this.next = null; //by default object value is null
@@ -27,6 +25,32 @@ public class LinkedList {
 			}
 			return newNode;
 		}
+		public void push(int data) {
+			Node newNode = new Node(data);
+			newNode .next = head;
+			head = newNode;	
+		}    
+		// Additional data put in betn previous data 
+		public void insertAfter(Node prevNode, int value) {
+			if (prevNode == null) {
+				System.out.println("Prev Node should not be null");
+				return;
+				}
+				Node newNode = new Node(value);
+				newNode.next = prevNode.next;
+				prevNode.next = newNode;
+				print();
+		}
+	//Delete first element
+		public int pop() {
+			int popData = 0;
+			if (head == null) {
+				System.out.println("Stack over flow ");
+			}
+			popData = head.data;
+			head = head.next;
+			return popData;
+		}
 		// print the output
 		public void print() {
 			Node temp = head;
@@ -35,23 +59,6 @@ public class LinkedList {
 				temp = temp.next;
 			}
 		}	
-		public void push(int data) {
-			Node newNode = new Node(data);
-			newNode .next = head;
-			head = newNode;
-		}    
-		// Additional data put in betn previous data
-		public void insertAfter(Node prevNode, int value) {
-			if (prevNode == null) {
-				System.out.println("Prev Node should not be null");
-				return;
-				}
-				
-				Node newNode = new Node(value);
-				newNode.next = prevNode.next;
-				prevNode.next = newNode;
-
-				print();
-		}
 	}
+		
 	
